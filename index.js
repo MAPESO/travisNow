@@ -6,7 +6,7 @@ const server = createServer(app)
 const port = process.env.NODE_ENV || 3000
 
 app.get('/', (req, res) => {
-    res.send('<h1>Hi, Now</h1>')
+    res.send('<h1>Hi, Now :)</h1>')
     res.end()
 })
 
