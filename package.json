@@ -7,8 +7,10 @@
   "author": "Mark Pena <markdrew53@gmail.com>",
   "license": "MIT",
   "private": false,
+  "dependencies": {
+    "express": "^4.16.3"
+  },
   "scripts": {
-    "start": "now --public",
-    "dev": "node ."
+    "start": "node ."
   }
 }

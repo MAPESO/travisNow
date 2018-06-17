@@ -1,9 +1,13 @@
 const { createServer } = require('http')
+const express =  require('express')
+
+const app = express()
+const server = createServer(app)
 const port = process.env.NODE_ENV || 3000
 
-const server = createServer((req, res) => {
-    res.writeHead(200, { 'Content-Type': 'text/html' })
-    res.end('<h1>Hoola</h1>')
+app.get('/', (req, res) => {
+    res.send('<h1>Hi, Now :)</h1>')
+    res.end()
 })
 
 server.listen(port, err => {
